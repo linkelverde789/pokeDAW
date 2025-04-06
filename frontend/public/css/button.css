@@ -1,0 +1,16 @@
+button{
+    all: unset;
+    background-color: #f0f0f0;
+    border: solid 2px #b3b1b1;
+    text-align: center;
+    border-radius: 3px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #d6d4d4;
+}
+
+/* input, select{
+    height: 25px;
+} */

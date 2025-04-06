@@ -1,0 +1,135 @@
+.create-team-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.create-team-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.team-selectors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.pokemon-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pokemon-selector label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #dcfce7;
+    color: #16a34a;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.save-team-button {
+    display: block;
+    width: -webkit-fill-available;
+    max-width: 300px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.save-team-button:hover:not(:disabled) {
+    background-color: #2563eb;
+}
+
+.save-team-button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.pokemon-selector .css-1dimb5e-singleValue {
+    color: #1e293b;
+}
+
+.pokemon-selector .css-1wa3eu0-placeholder {
+    color: #64748b;
+}
+
+.pokemon-selector .css-1dimb5e-control {
+    border-color: #e2e8f0;
+    border-radius: 6px;
+    min-height: 42px;
+}
+
+.pokemon-selector .css-1dimb5e-control:hover {
+    border-color: #cbd5e1;
+}
+
+.pokemon-selector .css-1dimb5e-control--is-focused {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+} 
+
+
+.team-name-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.team-name-input label{
+    font-weight: 600;
+    color: #34495e;
+}
+
+.team-name-input input{
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    width: 100%;
+    min-height: 50px;
+    font-size: 1rem;
+    color: #1e293b;
+    transition: border-color 0.2s;
+}
+
+.team-name-input input:hover {
+    border-color: #cbd5e1;
+}
+
+.team-name-input input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+}
+
+
+
+
+

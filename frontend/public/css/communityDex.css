@@ -1,0 +1,80 @@
+.communitymonDIV {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 300px;
+    align-items: center;
+    height: 270px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px -12px black;
+    transition: transform 0.2s ease-in-out;
+}
+
+.communitymonDIV:hover {
+    transform: scale(1.05);
+}
+
+.communitymonDIV .image {
+    display: flex;
+    justify-content: center;
+    border-radius: inherit;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: relative;
+    height: 170px;
+}
+
+.communitymonDIV .image img {
+    text-align: center;
+    width: 50%;
+    object-fit: contain;
+    filter: drop-shadow(2px 4px 6px);
+}
+
+.communitymonInfo {
+    border-top: 2px solid black;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto';
+}
+
+.communitymonMain {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.communitymonID {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: large;
+    padding: 10px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+@media (max-width: 768px) {
+    .communitymonMain {
+        padding: 20px;
+    }
+}
+
+
+
+.noMore,
+.loadingcommunitymon {
+    clear: both;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

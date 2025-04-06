@@ -1,0 +1,43 @@
+  /* Debil */
+  .\32 {
+    background-color: #ec6349;
+  }
+
+  .\34 {
+    background-color: #ce2340;
+  }
+
+/* Resistente */
+  .\30\.25 {
+    background-color: #69a04b;
+  }
+
+  .\30\.5 {
+    background-color: #8cc46c;
+  }
+
+  /* Inmune */
+  .\30 {
+    background-color: #a6a4a4;
+  }
+
+
+  .damage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+
+  #PokemonDirect img{
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  .pokemon-select-item {
+    display: flex;
+    flex-direction: column;
+  }
+  #PokemonDirect table, #PokemonDirect th, #PokemonDirect td{
+    text-transform: capitalize;
+  }

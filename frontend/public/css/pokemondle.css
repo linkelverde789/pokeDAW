@@ -1,0 +1,28 @@
+.correct{
+    background-color: lightgreen;
+}
+
+.fail{
+    background-color: lightcoral;
+}
+
+
+.pokemon-select{
+    width: 100%;
+}
+
+.mainGuess .pokemon-select{
+    margin-top: 20px;
+    width: 250px;
+}
+
+#pokemondleButton{
+    width: 250px;
+    margin-top: 20px;
+}
+
+.tablePokemondle{
+    overflow: auto;
+    scrollbar-width: none;
+    text-transform: capitalize;
+}

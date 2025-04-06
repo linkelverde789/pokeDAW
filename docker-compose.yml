@@ -1,0 +1,66 @@
+version: "3.8"
+services:
+  database:
+    image: postgres:16.2-alpine3.19
+    restart: always
+    networks:
+      - app-network
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: alumno
+      POSTGRES_PASSWORD: alumno
+    volumes:
+      - database-disk-pokemonJS:/var/lib/postgresql/data
+      - ./database/initdb.d:/docker-entrypoint-initdb.d
+      - ./database/postgresql.conf:/etc/postgresql/postgresql.conf
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    networks:
+      - app-network
+    ports:
+      - "8081:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: alumno@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: alumno
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    volumes:
+      - pgadmin-disk-pokemonJS:/var/lib/pgadmin
+
+  backend:
+    image: sergio1martinurbano/pruebanodejs
+    container_name: backend
+    restart: always
+    depends_on:
+      - database
+    networks:
+      - app-network
+    ports:
+      - "3000:3000"
+    volumes:
+       - ./backend:/usr/src/app
+    working_dir: /usr/src/app
+    command: tail -f /dev/null
+
+  frontend:
+    image: sergio1martinurbano/pruebanodejs
+    container_name: frontend
+    restart: always
+    networks:
+      - app-network
+    ports:
+      - "8080:8080"
+    volumes:
+       - ./frontend:/usr/src/app
+    working_dir: /usr/src/app
+    command: tail -f /dev/null
+
+volumes:
+  database-disk-pokemonJS:
+  pgadmin-disk-pokemonJS:
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,157 @@
+.team-title img {
+    height: 48px;
+}
+
+.team-card {
+    height: max-content;
+    width: 100%;
+    max-width: 48%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.team-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.team-title h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.toggle-button:hover {
+    background-color: #f5f5f5;
+}
+
+.team-content {
+    padding: 16px;
+}
+
+.team-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.team-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pokemon-member {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.pokemon-member img {
+    width: 32px;
+    height: 32px;
+}
+
+.pokemon-member span {
+    font-size: 0.9rem;
+}
+
+.team-stats {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: #666;
+}
+
+.stat-value {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        max-width: 100%;
+    }
+
+    .team-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+.teamCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+} 
+
+
+.pokemon-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.pokemon-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pokemon-item span{
+    width: 100%;
+    text-align: center;
+}
+
+.pokemon-sprite{
+    border-radius: 5px;
+    border: 3px solid #eee;
+}

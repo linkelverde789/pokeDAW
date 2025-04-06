@@ -1,0 +1,17 @@
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
+
+function PoketoolsIndex(){
+    const {t}=useTranslation();
+    return <>
+    <main className="home">
+    <h1>Poketools</h1>
+    <p>{t('poketools_text')}</p>
+<img src="https://poqu-a-doodle.com/img/portfolio/tinkatonsmithy.jpg" alt="" />
+    </main>
+    </>
+}
+
+
+export default PoketoolsIndex;

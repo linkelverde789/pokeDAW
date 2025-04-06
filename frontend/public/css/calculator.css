@@ -1,0 +1,82 @@
+h1{
+  text-align: center;
+}
+
+.form-section {
+  margin: 20px 0;
+  text-align: center;
+  /* overflow-x: auto; */
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+select{
+  width: 150px;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+#form-section{
+  display: flex;
+  flex-direction: column;
+}
+table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+
+.displayTable{
+  overflow: auto;
+  scrollbar-width: none;
+}
+.displayTable th, .displayTable td  {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 12px;
+
+}
+
+.displayTable th{
+  background-color: #f4f4f4;
+  font-weight: bold;
+  height: 70px;
+    width: 10px;
+}
+
+.displayTable tr:nth-child(even){
+  background-color: #f9f9f9;
+}
+
+.displayTable tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#calculateIV,#calculateEV, #dataCleaner {
+  border-radius: 4px;
+  border: solid 1px #888888;
+}
+
+#baseForm {
+  margin-bottom: 60px;
+}
+
+.mainForm {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#resultado {
+  text-align: center;
+}

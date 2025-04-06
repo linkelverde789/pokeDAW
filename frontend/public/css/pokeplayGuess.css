@@ -1,0 +1,92 @@
+.mainGuess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainGuess form {
+    all: unset;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px 0 0 0 ;
+    text-align: center;
+}
+
+.result.visible {
+    display: flex;
+    background-position: center;
+    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/05/whos-that-pokemon.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70%;
+    border: solid 2px;
+    border-radius: 15px;
+}
+
+.result.hidden {
+    display: flex;
+    padding-bottom: 34.9%;
+    background-position: center;
+    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/05/whos-that-pokemon.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70%;
+    border: solid 2px;
+    border-radius: 15px;
+}
+
+.result.hidden img {
+    display: none;
+}
+
+.mainGuess img {
+    width: 50%;
+    filter: brightness(0);
+}
+
+.correct{
+    text-transform: capitalize;
+}
+
+.entryDescription{
+    margin-top: 20px;
+    max-width: 40%;
+}
+.descriptionText{
+    text-align: center;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+#gif{
+    all: unset;
+    filter: brightness(1);
+    height: 35%;
+    margin-top: 30px;
+}

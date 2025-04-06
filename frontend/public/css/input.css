@@ -1,0 +1,26 @@
+.banano, input, select, textarea{
+    min-height: 38px;
+    border: solid 1px hsl(0, 0%, 80%);
+    border-radius: 4px;
+    width: auto;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding: 10px;
+    color: hsl(0, 0%, 20%);
+}
+
+button{
+    max-height: 38px;
+    height: 35px;
+}
+
+label{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.label-title{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}

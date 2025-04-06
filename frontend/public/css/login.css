@@ -1,0 +1,72 @@
+form {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 20px 0 0 0;
+}
+
+#formTypes{
+    margin-top: 30px;
+    display: flex;
+    justify-self: center;
+    width: 500px;
+}
+
+form #formTypes {
+    display: flex;
+    justify-self: center;
+    width: 500px;
+    margin-top: 5px;
+}
+
+/* input, textarea{
+    margin-top: 5px;
+
+} */
+
+form button {
+    margin-top: 20px;
+}
+
+form a {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    form, #formTypes, select{
+        width: 100%;
+    }
+}
+
+
+
+/* #loginForm{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}
+#loginForm label{
+    margin-top: 20px;
+}
+
+#loginForm input{
+    margin-bottom: 10px;
+}
+
+#loginForm a{
+background-color: red;
+} */

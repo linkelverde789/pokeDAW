@@ -1,0 +1,28 @@
+.createPokemonMember {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+.tableContainer{
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.moves-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .moves-one{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .moves-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
