@@ -128,7 +128,7 @@ function Pokemon() {
             <button id="captured" onClick={handleCapture}>
               <img
                 className={info.catched.toString()}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png"
+                src="/images/catch.png"
                 alt=""
               />
             </button>
@@ -136,7 +136,7 @@ function Pokemon() {
               <img
                 id="fav"
                 className={info.fav.toString()}
-                src="https://images.wikidexcdn.net/mwuploads/wikidex/4/4a/latest/20240129204317/Escama_coraz%C3%B3n_%28Dream_World%29.png"
+                src="/images/fav.png"
                 alt=""
               />
             </button>
