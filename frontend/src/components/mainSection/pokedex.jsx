@@ -7,7 +7,7 @@ function PokedexIndex() {
     <main className="home">
       <h1>Pokédex - {t("home")}</h1>
       <p>{t("pokedex-text")}</p>
-      <img className="pokedexIcon" src="https://www.pkparaiso.com/rubi-omega-zafiro-alfa/pokedex-hoenn/pokedex.png" alt="" />
+      <img className="pokedexIcon" src="/images/pokedex.png" alt="" />
     </main>
   );
 }

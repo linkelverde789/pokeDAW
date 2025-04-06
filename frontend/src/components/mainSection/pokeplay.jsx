@@ -8,7 +8,7 @@ function PokeplayIndex(){
 
     <h1>Pokeplay</h1>
     <p>{t('pokeplay_text')}</p>
-    <img src="https://i.ebayimg.com/00/s/MTAzNVgxNjAw/z/ny4AAOSwa8Jfmtx~/$_57.JPG?set_id=8800005007" alt="" />
+    <img src="/images/pokeplay.jpg" alt="" />
     </main>
     </>
 }

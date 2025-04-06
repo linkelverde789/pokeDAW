@@ -8,7 +8,7 @@ function CommunitymonIndex() {
       <main className="home">
         <h1>Communitymon</h1>
         <p>{t("communitymon_text")}</p>
-        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/5NZMRFLGB5G4DNZ3YJSQANOMKQ.jpg" alt="Pikachu Van Gogh" />
+        <img src="/images/communitymon.jpg" alt="Pikachu Van Gogh" />
       </main>
     </>
   );

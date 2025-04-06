@@ -10,7 +10,7 @@ function Home() {
 
     <div className="meme">
     <p><b>Literalmente</b></p>
-      <img src="https://64.media.tumblr.com/3a978d7783483b9081802fbc7e532ad2/tumblr_ob8gfaq78y1v68t0mo2_500.gif" alt="" />
+      <img src="/images/home.gif" alt="" />
       <p><b>Literalmente Camarón de la Isla</b></p>
     </div>
   </main>

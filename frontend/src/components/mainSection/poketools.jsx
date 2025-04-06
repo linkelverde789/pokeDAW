@@ -8,7 +8,7 @@ function PoketoolsIndex(){
     <main className="home">
     <h1>Poketools</h1>
     <p>{t('poketools_text')}</p>
-<img src="https://poqu-a-doodle.com/img/portfolio/tinkatonsmithy.jpg" alt="" />
+<img src="/images/poketools.jpg" alt="" />
     </main>
     </>
 }

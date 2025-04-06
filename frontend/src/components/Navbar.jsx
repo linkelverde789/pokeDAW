@@ -73,7 +73,7 @@ function Navbar() {
       <div className="nav-container">
         <div className="logo">
           <img onClick={()=>{navigate(`/pokedex/pokemon/${Math.floor(Math.random() * 1025) + 1}`)}} 
-            src="https://pa1.aminoapps.com/6386/d93bdb5a6cfa647336b1ed5c7bf6807bc3fa8cff_00.gif"
+            src="/images/ditto.gif"
             alt="Ditto dancing Conga"
           />
           <span className="ruta1"><a href="/">PokeDAW</a></span>
