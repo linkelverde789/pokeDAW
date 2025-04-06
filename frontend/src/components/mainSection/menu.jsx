@@ -21,7 +21,7 @@ function MenuIndex() {
 {t('menu_text')}
       </p>
       <img
-        src="/public/images/viyuela.png"
+        src="/images/viyuela.png"
         alt=""
       />
     </main>
