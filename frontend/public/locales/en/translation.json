@@ -47,6 +47,7 @@
   "guessTitle": "Who's that Pokémon?",
   "guess": "Take a guess",
   "points": "Streak",
+  "best_points": "Best streak",
   "error_load": "Can`t load the pokemon data :/",
   "pokedex-text": "In this section, we focus on exploring the original Pokémon, those that were part of the first generations of the Pokémon universe, as well as Pokémon created by the community. The original Pokémon, known for their unique designs and characteristics, remain the most beloved by fans. On the other hand, community Pokémon are those designed by community members, based on their creativity and inspiration. These Pokémon can include new types, abilities, or evolutions, showcasing the incredible passion and talent of Pokémon followers. Here, you can discover both the classics and the fan innovations, celebrating the diversity of the Pokémon world.",
   "noMore": "Cant`t load more pokemon",

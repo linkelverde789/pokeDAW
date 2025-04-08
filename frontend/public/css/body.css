@@ -5,7 +5,9 @@
 * {
     font-family: 'Montserrat', 'Roboto';
 }
-
+.Points{
+    margin-top: 10px;
+}
 html {
     overflow-y: auto;
     scrollbar-width: none;

@@ -22,6 +22,7 @@ function PokeplayGuess() {
   const { t } = useTranslation();
   const [randomPokemon, setRandomPokemon] = useState(null);
   const [points, setPoints] = useState(0);
+  const [bestScore, setBestScore]=useState(0);
   const [guess, setGuess] = useState("");
   const [result, setResult] = useState(null);
   const [pepe, setPepe] = useState(false);
@@ -49,6 +50,9 @@ function PokeplayGuess() {
         origin: { y: 0.6 },
       });
     } else {
+      if (bestScore<points){
+        setBestScore(points)
+      }
       setPoints(0);
       setResult("Incorrect!");
       setShake(true);
@@ -93,6 +97,10 @@ function PokeplayGuess() {
       <p className="Points">
         {t("points")}: {points}
       </p>
+      <div className="spacer"></div>
+      {bestScore!==0 && <p>
+        {t("best_points")}: {bestScore}
+      </p>}
     </div>
   );
 }

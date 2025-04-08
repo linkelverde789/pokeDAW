@@ -7,12 +7,12 @@ import axiosInstance from '../../axiosConfig';
 
 
 
-// Función para obtener la lista paginada de Pokémon
 const fetchAllPokemon = async (start) => {
   try {
     let data = await axiosInstance.get(
       `pokedex/all?limit=12&start=${start}`
     );
+    console.log(data);
     data=data.data;
     return data && data.length > 0 ? data : [];
   } catch (error) {
@@ -21,7 +21,6 @@ const fetchAllPokemon = async (start) => {
   }
 };
 
-// Función para buscar Pokémon por nombre
 const fetchPokemonByName = async (name) => {
   try {
     let data = await axiosInstance.get(

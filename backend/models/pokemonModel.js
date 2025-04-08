@@ -62,6 +62,7 @@ async function abilitiesInfo(id_pokemon) {
   try {
     return await db.manyOrNone('select * from pokedex_ability where id_pokemon=$1', [id_pokemon]);
   } catch (error) {
+    console.log(error);
     return null;
   }
 }

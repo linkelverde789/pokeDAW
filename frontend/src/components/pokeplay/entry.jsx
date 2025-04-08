@@ -18,6 +18,7 @@ function PokeplayEntry() {
   const { t, i18n } = useTranslation();
   const [randomPokemon, setRandomPokemon] = useState(null);
   const [points, setPoints] = useState(0);
+  const [bestScore, setBestScore]=useState(0);
   const [guess, setGuess] = useState("");
   const [shake, setShake] = useState(false);
   const [answer, setAnswer] = useState(false);
@@ -44,6 +45,7 @@ function PokeplayEntry() {
         origin: { y: 0.6 },
       });
     } else {
+      if (bestScore<points) setBestScore(points)
       setPoints(0);
       setShake(true);
       setTimeout(() => setShake(false), 500);
@@ -84,6 +86,10 @@ function PokeplayEntry() {
       <p className="Points">
         {t("points")}: {points}
       </p>
+      <div className="spacer"></div>
+      {bestScore!==0 && <p>
+        {t("best_points")}: {bestScore}
+      </p>}
 
       <img
         src="https://media.tenor.com/ihqN6a3iiYEAAAAM/pikachu-shocked-face-stunned.gif"

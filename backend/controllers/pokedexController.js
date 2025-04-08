@@ -203,6 +203,7 @@ async function getAllPokemonAbilities() {
 async function getPokemonAbilities(id_pokemon) {
   let data = await abilitiesInfo(id_pokemon);
   let result = {};
+  console.log(data);
   result[id_pokemon] = data.map(ability => {
     return {
       id: ability.id_ability,

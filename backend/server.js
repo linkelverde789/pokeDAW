@@ -27,12 +27,12 @@ const swaggerOptions = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'Pokédex API',
+      title: 'PokeDaw',
       version: '1.0.0',
       description: 'API para gestionar una Pokédex interactiva con juegos y herramientas',
       contact: {
         name: 'API Support',
-        email: 'support@example.com'
+        email: 'martinurbano.sergio@gmail.com'
       },
       license: {
         name: 'MIT',
@@ -85,7 +85,7 @@ const swaggerOptions = {
 };
 
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
