@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import axiosInstanceCommunitymon from "../../axiosConfigCommunitymon";
+import axiosInstanceCommunitymon from "../../axiosConfigs/axiosConfigCommunitymon";
 import Error from "../error";
 import Loading from "../Loading";
 import { useTranslation } from "react-i18next";

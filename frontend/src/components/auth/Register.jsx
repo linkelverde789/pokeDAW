@@ -1,5 +1,5 @@
 import React, { useEffect, useState, version } from "react";
-import axiosInstanceAuth from "../../axiosConfigAuth";
+import axiosInstanceAuth from "../../axiosConfigs/axiosConfigAuth";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../userContext";
 import Error from "../error";

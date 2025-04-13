@@ -75,7 +75,6 @@ export default function CreatePoketeam() {
             });
 
             setSuccess(t("success.team_created"));
-            setTimeout(() => navigate("/my-teams"), 2000);
         } catch (err) {
             setError(t("error.saving_team"));
         } finally {
@@ -83,7 +82,7 @@ export default function CreatePoketeam() {
         }
     }
 
-    if (isLoading && data.length === 0) {
+    if (isLoading || data.length === 0) {
         return <Loading />;
     }
 

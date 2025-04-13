@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loading from "../Loading";
 import { useTranslation } from "react-i18next";
-import axiosInstanceCommunitymon from "../../axiosConfigCommunitymon";
+import axiosInstanceCommunitymon from "../../axiosConfigs/axiosConfigCommunitymon";
 import { useUser } from "../../userContext";
 
 function DeleteCommunitymon() {
