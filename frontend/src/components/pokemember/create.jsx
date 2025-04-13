@@ -3,9 +3,9 @@ import { useUser } from "../../userContext";
 import { useNavigate } from "react-router-dom";
 import FullPokemonSelect from "../select";
 import Select from "react-select";
-import axiosInstance from "../../axiosConfigs/axiosConfig";
-import axiosPoketeam from "../../axiosConfigs/axiosConfigTeams";
 import { useTranslation } from "react-i18next";
+import axiosInstance from "../../axiosConfigs/axiosConfigAPI";
+import axiosPoketeam from "../../axiosConfigs/axiosConfigTeams";
 
 function CreatePokemonMember() {
   const [basePokemon, setBasePokemon] = useState(null);

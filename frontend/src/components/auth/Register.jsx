@@ -1,9 +1,9 @@
 import React, { useEffect, useState, version } from "react";
-import axiosInstanceAuth from "../../axiosConfigs/axiosConfigAuth";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../userContext";
 import Error from "../error";
 import { useTranslation } from "react-i18next";
+import axiosInstanceAuth from "../../axiosConfigs/axiosConfigAuth";
 function Register() {
     const { t } = useTranslation();
   const { login} = useUser();

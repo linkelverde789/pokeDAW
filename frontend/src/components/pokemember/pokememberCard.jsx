@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useTranslation } from "react-i18next"
 
 function generateNumberToString(number) {
-  let result = number.toString();
+  let result = `${number}`;
   while (result.length < 4) {
     result = "0" + result;
   }

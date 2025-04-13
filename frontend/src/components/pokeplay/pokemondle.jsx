@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loading from "../Loading";
 import Select from "react-select";
 import confetti from "canvas-confetti";
-import axiosInstance from "../../axiosConfigs/axiosConfig";
+import axiosInstance from "../../axiosConfigs/axiosConfigAPI";
 import { useTranslation } from "react-i18next";
 
 function Pokemondle() {
