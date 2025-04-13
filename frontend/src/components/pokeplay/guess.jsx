@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Loading from "../Loading";
 import confetti from "canvas-confetti";
 import axios from "axios";
-import axiosInstance from '../../axiosConfigs/axiosConfig';
+import axiosInstance from '../../axiosConfigs/axiosConfigAPI';
 
 import FullPokemonSelect from "../select";
 

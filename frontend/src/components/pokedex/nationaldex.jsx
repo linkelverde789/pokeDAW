@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loading from "../Loading";
 import { useTranslation } from "react-i18next";
-import axiosInstance from '../../axiosConfigs/axiosConfig';
+import axiosInstance from '../../axiosConfigs/axiosConfigAPI';
 
 
 
@@ -12,7 +12,6 @@ const fetchAllPokemon = async (start) => {
     let data = await axiosInstance.get(
       `pokedex/all?limit=12&start=${start}`
     );
-    console.log(data);
     data=data.data;
     return data && data.length > 0 ? data : [];
   } catch (error) {

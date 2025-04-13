@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-import axiosUserPokemon from "../../axiosConfigUser";
 import { useUser } from "../../userContext";
 import { useNavigate } from "react-router-dom";
 import Loading from "../Loading";
 import { useTranslation } from "react-i18next";
+import axiosUserPokemon from "../../axiosConfigs/axiosConfigUser";
 
 function CatchedPokemon() {
   const { t } = useTranslation();
@@ -44,7 +44,6 @@ function CatchedPokemon() {
   if (loading) {
     return <Loading />;
   }
-console.log(catchedPokemons)
   if (!catchedPokemons||catchedPokemons.length===0) {
     return (
       <>

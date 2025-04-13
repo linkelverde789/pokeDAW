@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Loading from "../Loading";
 import Select from "react-select";
-import axiosInstance from '../../axiosConfigs/axiosConfig';
+import axiosInstance from '../../axiosConfigs/axiosConfigAPI';
 import Error from "../error";
 
 const IVCalculator = () => {

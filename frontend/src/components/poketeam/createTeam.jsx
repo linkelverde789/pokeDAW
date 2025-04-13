@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import axiosPoketeam from "../../axiosConfigTeams";
 import { useTranslation } from "react-i18next";
 import { useUser } from "../../userContext";
 import Loading from "./../Loading";
 import { useNavigate } from "react-router-dom";
 import Select from "react-select";
+import axiosPoketeam from "../../axiosConfigs/axiosConfigTeams";
 
 export default function CreatePoketeam() {
     const [data, setData] = useState([]);
@@ -23,7 +23,11 @@ export default function CreatePoketeam() {
             setIsLoading(true);
             let response = await axiosPoketeam.post("pokemember/readAll", { id_user: id_user });
             if (!response || !response.data) return setData([]);
+            if (!Array.isArray(response.data)) {
+                response.data=[response.data]
+            }
             setData(response.data);
+        
         } catch (err) {
             setError(t("error.fetching_pokemon"));
         } finally {
@@ -56,6 +60,7 @@ export default function CreatePoketeam() {
     async function handleSaveTeam() {
         try {
             setIsLoading(true);
+
             const teamIds = team.map(pokemon => pokemon?.value).filter(Boolean);
             
             if (teamIds.length === 0) {
@@ -81,7 +86,6 @@ export default function CreatePoketeam() {
             setIsLoading(false);
         }
     }
-
     if (isLoading || data.length === 0) {
         return <Loading />;
     }

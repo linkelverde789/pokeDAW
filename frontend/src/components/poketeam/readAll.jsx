@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axiosPoketeam from "../../axiosConfigTeams";
+import axiosPoketeam from "../../axiosConfigs/axiosConfigTeams";
 import TeamCard from "./TeamCard";
 import { useTranslation } from "react-i18next";
 import { useUser } from "../../userContext";

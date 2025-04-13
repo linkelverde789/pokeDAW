@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import axiosPoketeam from "../../axiosConfigTeams";
 import PokemonCard from "./pokememberCard";
 import { useTranslation } from "react-i18next";
 import { useUser } from "../../userContext";
 import Loading from "./../Loading";
 import { useNavigate } from "react-router-dom";
+import axiosPoketeam from "../../axiosConfigs/axiosConfigTeams";
 
 export default function ReadAllPokemember() {
     const { t } = useTranslation();
@@ -14,6 +14,9 @@ export default function ReadAllPokemember() {
 
     async function fetchInfo(id_user) {
         let response = await axiosPoketeam.post("/pokemember/readAll", { id_user: id_user })
+        if (!Array.isArray(response.data)) {
+            response.data=[response.data]
+        }
         setData(response.data);
     }
 

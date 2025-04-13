@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import axiosInstance from "../../axiosConfigs/axiosConfig";
+import axiosInstance from "../../axiosConfigs/axiosConfigAPI";
 import axiosUserPokemon from "../../axiosConfigs/axiosConfigUser";
 import Loading from "../Loading";
 import Error from "../error";
