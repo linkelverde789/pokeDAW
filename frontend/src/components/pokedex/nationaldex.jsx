@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loading from "../Loading";
 import { useTranslation } from "react-i18next";
-import axiosInstance from '../../axiosConfig';
+import axiosInstance from '../../axiosConfigs/axiosConfig';
 
 
 

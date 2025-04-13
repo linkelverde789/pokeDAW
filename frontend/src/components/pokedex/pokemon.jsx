@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import axiosInstance from "../../axiosConfig";
-import axiosUserPokemon from "../../axiosConfigUser";
+import axiosInstance from "../../axiosConfigs/axiosConfig";
+import axiosUserPokemon from "../../axiosConfigs/axiosConfigUser";
 import Loading from "../Loading";
 import Error from "../error";
 import { useTranslation } from "react-i18next";

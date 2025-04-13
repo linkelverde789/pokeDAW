@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Loading from "../Loading";
 import confetti from "canvas-confetti";
-import axiosInstance from "../../axiosConfig";
+import axiosInstance from "../../axiosConfigs/axiosConfig";
 import FullPokemonSelect from "../select";
 
 async function getPokemon() {

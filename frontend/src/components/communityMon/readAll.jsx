@@ -3,7 +3,7 @@ import Loading from "../Loading";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import axiosInstanceCommunitymon from "../../axiosConfigCommunitymon";
+import axiosInstanceCommunitymon from "../../axiosConfigs/axiosConfigCommunitymon";
 
 function CommunityDex() {
   const navigate=useNavigate();

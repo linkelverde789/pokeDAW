@@ -3,8 +3,8 @@ import { useUser } from "../../userContext";
 import { useNavigate } from "react-router-dom";
 import FullPokemonSelect from "../select";
 import Select from "react-select";
-import axiosInstance from "../../axiosConfig";
-import axiosPoketeam from "../../axiosConfigTeams";
+import axiosInstance from "../../axiosConfigs/axiosConfig";
+import axiosPoketeam from "../../axiosConfigs/axiosConfigTeams";
 import { useTranslation } from "react-i18next";
 
 function CreatePokemonMember() {
@@ -40,7 +40,6 @@ function CreatePokemonMember() {
   }, []);
 
   function addMove(position, id_move) {
-
     setMoves(moves[position - 1] = id_move);
   }
 
@@ -102,9 +101,10 @@ function CreatePokemonMember() {
       let result=await axiosPoketeam.post("/pokemember/create", {newPokemember: pokemonData});
       if(result.data.error){
         throw Error(result.data.error);
+      }else{
+        setBasePokemon(null);
+        alert("Pokémon creado exitosamente");
       }
-      alert("Pokémon creado exitosamente");
-      setBasePokemon(null);
     } catch (error) {
       console.error("Error creando el Pokémon:", error);
       alert("Hubo un error al crear el Pokémon. Inténtalo de nuevo.");
